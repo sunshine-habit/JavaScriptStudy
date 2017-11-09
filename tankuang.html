@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+		function alertTankuang(){
+			var a="http://www.bdqn.cn/index.php?code=sdR4";
+			var b=a.indexOf("?");
+			var c=a.substring(b+1);
+			alert(c.toLowerCase());
+		}
+		function confirmTankuang(){
+			if(confirm("你幸福吗？")){
+				alert("have nice day~")
+			}
+		}
+		function promptTankuang(){
+			var code = prompt("1+1=?");
+			//alert(code);
+			if(code==2){
+				alert("你答对了");
+			}else{
+				alert("你答错了");
+			}
+		}
+		</script>
+	</head>
+	<body>
+		<ul>
+			<li><a href="#" target="_self" onclick="alertTankuang()">alert弹框</a></li>
+	        <li><a href="#" target="_self" onclick="confirmTankuang()">confirm弹框</a></li>
+	         <li><a href="#" target="_self" onclick="promptTankuang()">prompt弹框</a></li>
+	    </ul>
+	</body>
+</html>
